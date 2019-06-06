@@ -1,5 +1,20 @@
 .home {
 
+  .header-home {
+    
+    border-bottom: 2px dashed silver;
+    
+    img {
+      margin-bottom: 15px;
+    }
+
+    .header-text {
+      padding-top: @padding-small;
+      padding-bottom: @padding-big;
+    }
+
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +71,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .btnStyle();
+      }
     }
   }
 }// home
