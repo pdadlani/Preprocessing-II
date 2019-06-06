@@ -217,6 +217,7 @@ img {
   background: #FFEBCD;
   margin: auto;
   text-align: center;
+  padding-top: 20px;
 }
 .footer p {
   color: #212529;
