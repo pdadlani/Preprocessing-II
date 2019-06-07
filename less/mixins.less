@@ -1,14 +1,17 @@
 // Mixins in here
 
-.btnFlex (@justify, @align){
-  display: flex;
-  justify-content: @justify;
-  align-items: @align;
-}
 
-.btnStyle {
-  background-color: #008080;
-  color: white;
-  border-radius: 15px;
+.btnStyle (@btnColor, @btnBackgroundColor, @padding-small: 0, @padding-big: auto) {
+ // background-color: #008080;
+ // color: white;
+ // border-radius: 15px;
+
+  color: @btnColor;
+  background-color: @btnBackgroundColor;
+  padding: @padding-small @padding-big;
+
+  &:hover {
+    background-color: lighten(@btnBackgroundColor, 20%);
+  }
 
 }
